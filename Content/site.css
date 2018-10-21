@@ -1,0 +1,41 @@
+body{
+    font-family: 'Slabo 27px', serif;
+}
+
+footer{
+    background-color: #f1f1f1;
+}
+
+#footerCard{
+    background-color: #f1f1f1;
+}
+.shadow{
+    box-shadow: 0px 0px 10px black;
+}
+
+.shadow2{
+    box-shadow: 0px 0px 15px #00000030;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* social buttons */
+#twitter:hover{
+    color: #00a0d1;
+}
+
+#instagram:hover{
+    color: #e95950
+}
+
+#facebook:hover{
+    color: #3b5998
+}
+
+::selection{
+    background-color: #5cb85c 
+}
+
+.navbar{
+    text-align: center;
+}

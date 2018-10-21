@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="E-Ticaret Sayfası">
+    <meta name="keywords" content="E-Ticaret">
+    <meta name="author" content="Nurselin Durmuşer">
+    <title>Giriş Yap</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Content/site.css">
+
+    <!-- JavaScript -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+</head>
+
+<body>
+   <!-- navbar begin -->
+   <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="HomePage.html">Alışverişim</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Menü">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link3</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">
+                        <span class="fa fa-user-plus mr-1"></span>
+                        Kayıt Ol</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">
+                        <span class="fa fa-sign-in mr-1"></span>
+                        Giriş</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlProfile" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="fa fa-user mr-1"></span>
+                        Profil</a>
+                    <div class="dropdown-menu" aria-labelledby="ddlProfile">
+                        <a class="dropdown-item" href="MyProfile.html">Profili Görüntüle</a>
+                        <a class="dropdown-item" href="Address.html">Adreslerim</a>
+                        <a class="dropdown-item" href="Orders.html">Siparişlerim</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlCart" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="fa fa-shopping-cart mr-1"></span>
+                        Sepetim
+                    <span class="badge badge-secondary badge-pill">3</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlCart">
+                        <a class="dropdown-item" href="Product.html">Ürün 1</a>
+                        <a class="dropdown-item" href="Product.html">Ürün 2</a>
+                        <a class="dropdown-item" href="Product.html">Ürün 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Cart.html">Sepete Git</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlMessage" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="fa fa-envelope mr-1"></span>
+                        Mesajlar
+                        <span class="badge badge-secondary badge-pill">2</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlMessage">
+                        <a class="dropdown-item" href="Message.html">Mesaj 1</a>
+                        <a class="dropdown-item" href="Message.html">Mesaj 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Messages.html">Mesajlar</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="HomePage.html">
+                        <span class="fa fa-sign-out mr-1"></span>
+                        Çıkış</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- container begin -->
+    <div class="container">
+        <!-- content begin -->
+        <div class="row my-4">
+            <div class="col-md-4 offset-md-4 my-4">
+                <form>
+                    <div class="card card-default shadow">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>
+                                        <span class="fa fa-sign-in fa-2x"></span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-9 text-right">
+                                    <h2>Giriş</h2>
+                                    <small>Lütfen e-posta ve şifrenizi yazınız.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="E-Posta" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" id="password" placeholder="Parola" class="form-control">
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted text-right">
+                            <a href="ForgotPassword.html" class="btn btn-light">
+                                <u>Şifremi unuttum.</u>
+                            </a>
+                            <button class="btn btn-danger">
+                                Giriş
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- content end -->
+    </div>
+    <!-- container end -->
+
+    <!-- footer begin -->
+    <footer class="mt-5">
+        <div class="card card-default text-center" id="footerCard">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="card-title text-muted">Alışverişim</h5>
+                        <a href="#" class="btn text-dark">
+                            <span class="fa fa-twitter fa-2x" id="twitter"></span>
+                        </a>
+                        <a href="#" class="btn text-dark">
+                            <span class="fa fa-instagram fa-2x" id="instagram"></span>
+                        </a>
+                        <a href="#" class="btn text-dark">
+                            <span class="fa fa-facebook fa-2x" id="facebook"></span>
+                        </a>
+                    </div>
+                </div>
+                <div><hr></div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Hakkımızda</h4>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eius commodi a vero modi
+                                facere repudiandae similique est perferendis? Impedit velit quidem molestiae sequi
+                                necessitatibus voluptatem aut doloremque repellendus quasi!</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>İletişim</h4>
+                            <hr>
+                            <p>Adres
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ad.
+                            </p>
+                            <p>Telefon
+                                <br>
+                                0(000) 000 00 00
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Öne Çıkan Sayfalar</h4>
+                            <hr>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-dark">Lorem.</a>
+                            <br>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-dark">Eum.</a>
+                            <br>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-dark">Iste.</a>
+                            <br>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-dark">Quas.</a>
+                            <br>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-dark">Necessitatibus.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                Designed Nurselin Durmuşer &copy; 2018
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="E-Ticaret Sayfası">
+    <meta name="keywords" content="E-Ticaret">
+    <meta name="author" content="Nurselin Durmuşer">
+    <title>Ödeme Sayfası</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Content/site.css">
+
+    <!-- JavaScript -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+</head>
+
+<body>
+ <!-- navbar begin -->
+ <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="HomePage.html">Alışverişim</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Menü">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link3</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">
+                        <span class="fa fa-user-plus mr-1"></span>
+                        Kayıt Ol</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">
+                        <span class="fa fa-sign-in mr-1"></span>
+                        Giriş</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlProfile" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="fa fa-user mr-1"></span>
+                        Profil</a>
+                    <div class="dropdown-menu" aria-labelledby="ddlProfile">
+                        <a class="dropdown-item" href="MyProfile.html">Profili Görüntüle</a>
+                        <a class="dropdown-item" href="Address.html">Adreslerim</a>
+                        <a class="dropdown-item" href="Orders.html">Siparişlerim</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlCart" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="fa fa-shopping-cart mr-1"></span>
+                        Sepetim
+                    <span class="badge badge-secondary badge-pill">3</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlCart">
+                        <a class="dropdown-item" href="Product.html">Ürün 1</a>
+                        <a class="dropdown-item" href="Product.html">Ürün 2</a>
+                        <a class="dropdown-item" href="Product.html">Ürün 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Cart.html">Sepete Git</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlMessage" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="fa fa-envelope mr-1"></span>
+                        Mesajlar
+                        <span class="badge badge-secondary badge-pill">2</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlMessage">
+                        <a class="dropdown-item" href="Message.html">Mesaj 1</a>
+                        <a class="dropdown-item" href="Message.html">Mesaj 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Messages.html">Mesajlar</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="HomePage.html">
+                        <span class="fa fa-sign-out mr-1"></span>
+                        Çıkış</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- container begin -->
+    <div class="container">
+        <!-- content begin -->
+        <div class="row mt-4 mb-2">
+            <div class="col-md-12">
+                <h2>Ödeme Sayfası</h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-2 text-center">
+                <h2>
+                    <span class="fa fa-credit-card fa-4x text-success"></span>
+                </h2>
+            </div>
+            <div class="col-md-10 pl-5">
+                <div class="form-group row">
+                    <label class="col-md-2 font-weight-bold">Ad &amp; Soyad</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="Adınız Soyadınız">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 font-weight-bold">Teslimat Adresi</label>
+                    <div class="col-md-10">
+                        <select class="form-control">
+                            <option value="11">Ev</option>
+                            <option value="12">İş</option>
+                            <option value="13">Diğer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 font-weight-bold">Fatura Adresi</label>
+                    <div class="col-md-10">
+                        <select class="form-control">
+                            <option value="11">Ev</option>
+                            <option value="12">İş</option>
+                            <option value="13">Diğer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 font-weight-bold">Ad &amp; Soyad</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="Adınız Soyadınız">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 font-weight-bold">Kart Numarası</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="0000 0000 0000 0000" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 font-weight-bold">CVC</label>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" placeholder="000" pattern="[0-9]{4} [1-9]{3}">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 font-weight-bold">Son Kul. Trh.</label>
+                    <div class="col-md-2">
+                        <select class="form-control mr-4">
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="07">08</option>
+                            <option value="07">09</option>
+                            <option value="07">10</option>
+                            <option value="07">12</option>
+                            <option value="07">12</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-control">
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2020">2021</option>
+                            <option value="2020">2022</option>
+                            <option value="2020">2023</option>
+                            <option value="2020">2024</option>
+                            <option value="2020">2025</option>
+                            <option value="2020">2026</option>
+                            <option value="2020">2027</option>
+                            <option value="2020">2028</option>
+                            <option value="2020">2029</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-success">Ödeme Yap</button>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-10 offset-md-2">
+                <h1 class="text-success">
+                    <span class="fa fa-check fa-spin"></span>
+                    Ödeme Başarılı.
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nam aspernatur quisquam! Natus placeat, labore beatae sequi aut alias magnam similique a distinctio ducimus, molestias consequuntur, adipisci impedit recusandae fuga.</p>
+            </div>
+            <div class="col-md-10 offset-md-2">
+                <h1 class="text-danger">
+                    <span class="fa fa-close fa-spin"></span>
+                    Ödeme Başarısız.
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nam aspernatur quisquam! Natus placeat, labore beatae sequi aut alias magnam similique a distinctio ducimus, molestias consequuntur, adipisci impedit recusandae fuga.</p>
+            </div>
+        </div>
+        <!-- content end -->
+    </div>
+    <!-- container end -->
+
+    <!-- footer begin -->
+    <footer class="mt-5">
+        <div class="card card-default text-center" id="footerCard">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="card-title text-muted">Alışverişim</h5>
+                        <a href="#" class="btn text-dark">
+                            <span class="fa fa-twitter fa-2x" id="twitter"></span>
+                        </a>
+                        <a href="#" class="btn text-dark">
+                            <span class="fa fa-instagram fa-2x" id="instagram"></span>
+                        </a>
+                        <a href="#" class="btn text-dark">
+                            <span class="fa fa-facebook fa-2x" id="facebook"></span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Hakkımızda</h4>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eius commodi a vero modi
+                                facere repudiandae similique est perferendis? Impedit velit quidem molestiae sequi
+                                necessitatibus voluptatem aut doloremque repellendus quasi!</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>İletişim</h4>
+                            <hr>
+                            <p>Adres
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ad.
+                            </p>
+                            <p>Telefon
+                                <br>
+                                0(000) 000 00 00
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Öne Çıkan Sayfalar</h4>
+                            <hr>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-dark">Lorem.</a>
+                            <br>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-dark">Eum.</a>
+                            <br>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-dark">Iste.</a>
+                            <br>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-dark">Quas.</a>
+                            <br>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-dark">Necessitatibus.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                Designed Nurselin Durmuşer &copy; 2018
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+</body>
+
+</html>
